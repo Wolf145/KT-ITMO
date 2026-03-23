@@ -1,0 +1,24 @@
+< Вывод сообщений Ядра >
+sudo dmesg
+
+< Сборка >                    (A)
+mkdir build
+cd build
+cmake ..
+make
+
+< Загрузка модуля в ядро >    (B)
+sudo insmod networkfs.ko
+
+< Выгрузка модуля из ядра >   (C)
+sudo rmmod networkfs
+
+< Монтирование директории >   (D)
+sudo mkdir /mnt/networkfs
+{(A) -> (B)}
+sudo mount -t networkfs "$(cat ../token.txt)" /mnt/networkfs
+sudo chmod -R 777 /mnt/networkfs
+
+< Демонтирование директории > (E)
+sudo umount /mnt/networkfs
+{(C)}
