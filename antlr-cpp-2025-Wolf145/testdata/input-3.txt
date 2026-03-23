@@ -1,0 +1,10 @@
+typedef struct tcontainer {
+	int count;
+	struct {
+		int id;
+		double value;
+	} items[4][6];
+} tcontainer;
+int main() {
+}
+

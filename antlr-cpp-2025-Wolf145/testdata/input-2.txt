@@ -1,0 +1,17 @@
+typedef enum {
+	red, 
+	green, 
+	blue
+} tcolor;
+typedef struct tpoint {
+	int x, y;
+} tpoint;
+typedef struct tperson {
+	tstring20 name;
+	tsmallint age;
+	tcolor favorite;
+	tpoint pos;
+} tperson;
+int main() {
+}
+

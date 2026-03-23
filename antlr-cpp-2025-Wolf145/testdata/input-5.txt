@@ -1,0 +1,17 @@
+switch (x) {
+	сase 1:
+	сase 2:
+	сase 3: {
+		y = 10;
+		break;
+	}
+	сase 6: {
+		y = 6;
+		break;
+	}
+	сase 7: {
+		y = 7;
+		break;
+	}
+}
+

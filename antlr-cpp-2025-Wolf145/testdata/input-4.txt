@@ -1,0 +1,24 @@
+typedef enum {
+	zeliboba, 
+	aboba, 
+	sus
+} aboba;
+int sisipisi(int a, int b, aboba c) {
+	int returnVal;
+	const aboba p = c;
+	int a, b, c, sum, prod, divis;
+	double divisf;
+	sum = a + b;
+	prod = a * b;
+	divis = a / b;
+	divisf = a / b;
+	returnVal = sum * prod + divis;
+	return returnVal;
+}
+void sss() {
+	const unsigned int s = 4;
+	s = s + sisipisi(1, 2, 3, 4, 5 + 1000);
+}
+int main() {
+}
+

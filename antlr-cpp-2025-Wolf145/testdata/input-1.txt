@@ -1,0 +1,14 @@
+#define pi 3.14
+#define count pi
+#define name "Mike"
+int a;
+char b[256];
+int main() {
+	scanf("%s", &b);
+	scanf("%d", &a);
+	scanf("%d\n", &a);
+	printf("%d", a);
+	printf("%s", name);
+	printf("\n");
+}
+

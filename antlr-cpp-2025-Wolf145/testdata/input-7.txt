@@ -1,0 +1,26 @@
+int n;
+bool isprime(int n) {
+	bool returnVal;
+	int i;
+	if (n < 2) {
+		returnVal = false;
+	} else {
+		returnVal = true;
+		for (i = 2; i <= trunc(sqrt(n)); i++) {
+			if (n % i == 0) {
+				returnVal = false;
+				break;
+			}
+		}
+	}
+	return returnVal;
+}
+int main() {
+	scanf("%d\n", &n);
+	if (isprime(n)) {
+		printf("%s\n", "YES");
+	} else {
+		printf("%s\n", "NO");
+	}
+}
+

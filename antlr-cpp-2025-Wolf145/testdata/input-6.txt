@@ -1,0 +1,17 @@
+int a, b, t;
+int main() {
+	scanf("%d %d\n", &a, &b);
+	if (a < 0) {
+		a = -a;
+	}
+	if (b < 0) {
+		b = -b;
+	}
+	while(b != 0) {
+		t = a % b;
+		a = b;
+		b = t;
+	}
+	printf("%d\n", a);
+}
+
